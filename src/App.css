@@ -1,0 +1,193 @@
+.custom-carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.custom-carousel-indicators .dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-carousel-indicators .dot.active {
+    opacity: 1;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.custom-carousel-indicators .dot.active::after {
+    position: absolute;
+    content: ' ';
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation: active-dot 0.4s ;
+
+}
+
+
+
+.hero-area {
+    position: relative;
+}
+
+.hero-slider-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-slider-caption {
+    background: rgba(0, 0, 0, 0.315);
+    padding: 20px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.hero-slider-caption h2 {
+    font-size: 54px;
+    font-weight: 800;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-slider-caption h2 {
+        max-width: 100%;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .hero-slider-caption h4 {
+        text-align: center;
+    }
+
+    .hero-slider-caption .button-1 {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .hero-slider-caption h2 {
+        max-width: 100%;
+        width: 100%;
+        font-size: 48px;
+        text-align: center !important;
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+    .hero-slider-caption h2 {
+        max-width: 100%;
+        width: 100%;
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center !important;
+    }
+    
+.hero-slider-caption h4 {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+}
+
+
+.hero-slider-caption h4 {
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+.custom-carousel-indicators-2 {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-carousel-indicators-2 .dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    transform: ease 0.3s;
+    transition: 0.3s;
+}
+
+.dot.active {
+    opacity: 1;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0; 
+    padding: 0;
+    transform: ease 0.3s;
+
+
+}
+
+
+.custom-carousel-indicators-2 .dot.active::after {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    line-height: 0;
+    transform: ease 0.3s;
+    animation: active-dot 0.4s ;
+}
+@keyframes active-dot {
+    0%{
+        opacity: 0;
+        scale: 0;
+    }
+
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+
+}
+
+
+.button-1 {
+    max-width: fit-content;
+}
