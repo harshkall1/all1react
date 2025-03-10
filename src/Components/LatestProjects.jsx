@@ -37,6 +37,7 @@ const LatestProjects = () => {
       image:  p3,
       link: "project-details.html",
     },
+    
     {
       title: "Web Development",
       image:  p4,
