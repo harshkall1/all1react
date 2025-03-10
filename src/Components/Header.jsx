@@ -12,6 +12,7 @@ import { CgMenuRightAlt } from "react-icons/cg";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -63,9 +64,9 @@ const Header = () => {
           </div>
           <nav className={isMenuOpen ? "shownav" : ''} >
             <button onClick={toggleMenu} className="closebtn">
-              <IoCloseSharp size={35}/>
+              <IoCloseSharp size={35} />
             </button>
-            <NavLink onClick={toggleMenu} to={'/'} > 
+            <NavLink onClick={toggleMenu} to={'/'} >
               Home
             </NavLink  >
             <NavLink onClick={toggleMenu} to={'/about'} >
@@ -73,7 +74,7 @@ const Header = () => {
             </NavLink >
 
             <NavLink onClick={toggleMenu} to={'/services'} className={"Dropdown"} >
-              Services
+              Services   
               <ul>
                 <li>
 
@@ -88,10 +89,16 @@ const Header = () => {
                 </li>
               </ul>
             </NavLink >
+            <NavLink onClick={toggleMenu} to={'/faqs'} >
+              Faqs
+            </NavLink >
             <NavLink onClick={toggleMenu} to={'/projects'} >
               Projects
             </NavLink >
-            <NavLink onClick={toggleMenu}  to={'/contact'} >
+            <NavLink onClick={toggleMenu} to={'/career'} >
+              Careers
+            </NavLink >
+            <NavLink onClick={toggleMenu} to={'/contact'} >
               Contact Us
             </NavLink >
 

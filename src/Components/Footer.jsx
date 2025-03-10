@@ -25,7 +25,7 @@ const Footer = () => {
                   <div className="con">
                     <p>Talk To Our Support</p>
                     <span>
-                      <a href="tel:+1-843-222-1455">+1-843-222-1455</a>
+                      <a href="tel:+1-843-222-1455" style={{color : "#fff", textDecoration: "none"}}>+1-843-222-1455</a>
                     </span>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12 text-center">
               <div className="copy-text">
-                <p>Copyright © 2025 <a href="#">ALL 1 DIGITAL</a></p>
+                <p>Copyright © 2025 <a href="#" style={{textDecoration: "none"}}>ALL 1 DIGITAL</a></p>
               </div>
             </div>
           </div>

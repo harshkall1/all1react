@@ -27,7 +27,6 @@ const Home = () => {
             <WorksAbout />
             <LatestProjects />
             <CounterSection />
-            <SubscribeSection />
 
             <WeProvide />
             <Testimonial />
