@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './Style.css'
 
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";

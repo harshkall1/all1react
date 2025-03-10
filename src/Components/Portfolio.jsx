@@ -5,7 +5,7 @@ import p3 from '../assets/img/project/3.jpg';
 import p4 from '../assets/img/project/4.jpg';
 import p5 from '../assets/img/project/5.jpg';
 import p6 from '../assets/img/project/6.jpg';
-import './style.css'
+import './Style.css'
 const Portfolio = () => {
   const [filteredCategory, setFilteredCategory] = useState("all");
   const [isPopupOpen, setIsPopupOpen] = useState(false);
