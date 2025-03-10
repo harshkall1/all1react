@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/img/logo.jpg'
 import { Link, NavLink } from 'react-router-dom';
-import './style.css'
+import './Style.css'
 
 import { TiArrowSortedDown } from "react-icons/ti";
 import { IoSearchSharp } from "react-icons/io5";
